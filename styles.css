@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(144deg,  rgba(50, 130, 201, 0.5),rgb(13, 135, 211), rgb(255, 255, 255));
+}
+
+/* 🔹 Header - Fixed at the Top */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+}
+
+/* 🔹 Logo inside Header */
+.logo-container img {
+    max-width: 400px; /* Increase this value for a larger desktop size */
+    width: 100%; /* Ensures responsiveness */
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+/* 🔹 Adjust Logo for Mobile */
+@media (max-width: 600px) {
+    .logo-container img {
+        max-width: 150px; /* Smaller size for mobile */
+    }
+}
+
+
+/* 🔹 Main Section */
+main {
+    padding-top: 120px; /* Prevents content from being hidden behind fixed header */
+}
+
+/* 🔹 Container to keep grid centered */
+.container {
+    width: 80%;
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* 🔹 Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* 🔹 Grid Items (Now White) */
+.grid-item {
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, white, #ffffffd9); /* Boxes are now white */
+    border-radius: 8px;
+    padding: 15px;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    color: black;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔹 Hover Effect */
+.grid-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔹 Grid Icons (Dark for Visibility) */
+.grid-item i {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+    background: linear-gradient(45deg, #56b85a, #3c943f, #ffffff);
+    
+    /* Standard property for wider support */
+    background-clip: text;
+    -webkit-background-clip: text;
+    
+    /* Ensures the text is transparent to show gradient */
+    -webkit-text-fill-color: transparent;
+    color: transparent; /* Standard fallback */
+    
+    transition: background 0.3s ease;
+}
+
+
+/* 🔹 Grid Item Links */
+.grid-item a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+/* 🔹 Divider */
+.divider {
+    height: 2px;
+    background: white;
+    grid-column: span 2;
+    margin: 10px 0;
+}
+
+/* 🔹 Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: rgb(59, 52, 52);
+    color: black;
+    font-size: 14px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
