@@ -63,6 +63,14 @@ main {
     justify-content: center;
 }
 
+/* 🔹 Mobile View - Switch to Single Column */
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Switch to 1 column for mobile */
+        max-width: 90%; /* More flexibility */
+    }
+}
+
 /* 🔹 Grid Items Helpl Topics */
 .grid-item {
     height: 140px;
