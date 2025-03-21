@@ -18,7 +18,7 @@ header {
 
 /* 🔹 Logo inside Header */
 .logo-container img {
-    max-width: 450px; /* Increase this value for a larger desktop size */
+    max-width: 500px; /* Increase this value for a larger desktop size */
     width: 100%; /* Ensures responsiveness */
     height: auto;
     display: block;
@@ -135,7 +135,7 @@ footer {
 /* 🔹 Responsive Adjustments */
 @media (max-width: 600px) {
     .footer-logo {
-        max-width: 100px; /* Slightly smaller on mobile */
+        max-width: 200px; /* Slightly smaller on mobile */
     }
 }
 
