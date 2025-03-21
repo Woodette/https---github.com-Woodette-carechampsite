@@ -24,18 +24,23 @@ header {
 
 /* 🔹 Logo inside Header */
 .logo-container img {
-    max-width: 500px; /* Increase this value for a larger desktop size */
+    max-width: 220px; /* Increase this value for a larger desktop size */
     width: 100%; /* responsiveness */
     height: auto;
     display: block;
     margin: auto;
 }
 
-/* Removed logo for mobile */ 
+/* 🔹 Mobile Logo Size */
+@media (max-width: 600px) {
+    .logo-container img {
+        max-width: 180px; /* Smaller for mobile */
+    }
+}
 
 /* 🔹 Main Section */
 main {
-    padding-top: 130px; /* Prevents content from being hidden behind fixed header */
+    padding-top: 100px; /* Prevents content from being hidden behind fixed header */
 }
 
 /* 🔹 Container to keep grid centered */
@@ -51,10 +56,12 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
-    width: 100%;
+    width: 90%;  /* Allow better centering on mobile */
     max-width: 500px;
     margin: auto;
     padding: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 /* 🔹 Grid Items Helpl Topics */
