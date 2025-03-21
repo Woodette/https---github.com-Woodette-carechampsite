@@ -24,7 +24,7 @@ header {
 
 /* 🔹 Logo inside Header */
 .logo-container img {
-    max-width: 220px; /* Increase this value for a larger desktop size */
+    max-width: 350px; /* Increase this value for a larger desktop size */
     width: 100%; /* responsiveness */
     height: auto;
     display: block;
@@ -34,7 +34,7 @@ header {
 /* 🔹 Mobile Logo Size */
 @media (max-width: 600px) {
     .logo-container img {
-        max-width: 180px; /* Smaller for mobile */
+        max-width: 220px; /* Smaller for mobile */
     }
 }
 
